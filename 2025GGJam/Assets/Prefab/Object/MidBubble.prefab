@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3846296550866690712}
   - component: {fileID: 3846296550866690717}
   - component: {fileID: 3846296550866690713}
+  - component: {fileID: 1759512761}
   m_Layer: 0
   m_Name: MidBubble
   m_TagString: Bubble
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 835490549c5b5a84fb45faf220ad59b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -137,6 +138,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_Transform: {fileID: 0}
-  player_Rb: {fileID: 0}
+  player_Rb: {fileID: 3846296550866690717}
   explode_speed: 50
   explode_waitTime: 999
+--- !u!114 &1759512761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846296550866690706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a75ee69df7c1a47b1367fd2cd302a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationDuration: 1
+  finalScale: 1.5
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0}
+  bubblePrefab: {fileID: 0}

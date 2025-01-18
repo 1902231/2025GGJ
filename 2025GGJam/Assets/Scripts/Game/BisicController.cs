@@ -6,7 +6,7 @@ public class BisicController : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpSpeed;
-    public float jumpTime;//最好不要大于1，否则可能会长按跳跃向上的速度衰减过头变成向下的速度
+    public float jumpTime;
     public int jTimes;
     public BoxCollider2D feet;
     public float CreateBubbleTime_Mid;
@@ -15,7 +15,7 @@ public class BisicController : MonoBehaviour
     public GameObject BigBubble;
     public GameObject SmlBubble;
     public float offset;
-
+    private bool hasXSpeed;
 
     private Rigidbody2D rb;
     private float timer;
@@ -90,11 +90,9 @@ public class BisicController : MonoBehaviour
 
         }
     }
-
-
+    
     void OnGround()
     {
-        // 检查是否与 Ground 物体发生碰撞
         if (feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             timer = 0;
@@ -109,19 +107,16 @@ public class BisicController : MonoBehaviour
             
             if(timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
             {
-                
-                // 计算玩家右边的位置
                 Vector3 rightPosition = playerTransform.position + playerTransform.right * offset;
-                // 创建新的物体
                 GameObject midBubble = Instantiate(MidBubble, rightPosition, Quaternion.identity);
                 timer_CreateBubble = 0;
             }
         }
+        
         if(Input.GetKeyUp(KeyCode.J))
         {
             Debug.Log(timer_CreateBubble);
             timer_CreateBubble = 0;
-
         }
     }
 }
