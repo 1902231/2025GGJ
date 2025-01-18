@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|d:\\backup\\documents\\github\\2025ggj\\2025ggjam\\assets\\scripts\\middlebubbleai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\middlebubbleai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|d:\\backup\\documents\\github\\2025ggj\\2025ggjam\\assets\\scripts\\ui\\gamepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gamepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\assets\\scripts\\middlebubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\middlebubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\assets\\scripts\\bisicbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bisicbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\assets\\scripts\\bisiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bisiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BigBubbleAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BigBubbleAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\BisicController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\BisicController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MiddleBubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\NewBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NewBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BisicController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MiddleBubbleAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicBubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BisicBubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,59 +50,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BisicController.cs",
-              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BisicController.cs",
-              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BisicController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAmwCEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T13:54:23.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MiddleBubbleAI.cs",
-              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MiddleBubbleAI.cs",
-              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MiddleBubbleAI.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA4wB0AAAAZAAAAAAAAAA==",
+              "Title": "GamePanel.cs",
+              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\UI\\GamePanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GamePanel.cs",
+              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\UI\\GamePanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GamePanel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T13:32:31.914Z",
+              "WhenOpened": "2025-01-18T15:27:19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BigBubbleAI.cs",
+              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BigBubbleAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BigBubbleAI.cs",
+              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BigBubbleAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BigBubbleAI.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T13:42:42.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BisicController.cs",
+              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BisicController.cs",
+              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BisicController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv0IAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T13:54:23.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MiddleBubbleAI.cs",
+              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MiddleBubbleAI.cs",
+              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MiddleBubbleAI.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAwwFQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T13:32:31.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MiddleBubble.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MiddleBubble.cs",
               "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubble.cs",
               "RelativeToolTip": "Assets\\Scripts\\MiddleBubble.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T13:10:30.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T13:10:30.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "BisicBubble.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BisicBubble.cs",
               "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicBubble.cs",
               "RelativeToolTip": "Assets\\Scripts\\BisicBubble.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T12:56:04.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T12:56:04.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "BisicController.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\BisicController.cs",
               "RelativeDocumentMoniker": "Assets\\BisicController.cs",
@@ -105,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\NewBehaviourScript.cs",
