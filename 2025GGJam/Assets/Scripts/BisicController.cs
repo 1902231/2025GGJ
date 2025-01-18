@@ -15,6 +15,8 @@ public class BisicController : MonoBehaviour
     public GameObject BigBubble;
     public GameObject SmlBubble;
     public float offset;
+    public float offset_Big_Up;
+    public float offset_Big_Right;
 
 
     private Rigidbody2D rb;
@@ -48,13 +50,13 @@ public class BisicController : MonoBehaviour
     void flip()
     {
         bool hasXSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
-        if(hasXSpeed)
+        if (hasXSpeed)
         {
-            if(rb.velocity.x > 0.1f)
+            if (rb.velocity.x > 0.1f)
             {
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
-            if(rb.velocity.x < -0.1f)
+            if (rb.velocity.x < -0.1f)
             {
                 transform.localRotation = Quaternion.Euler(0, 180, 0);
             }
@@ -103,23 +105,31 @@ public class BisicController : MonoBehaviour
     }
     void CreateBubble()
     {
-        if(Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.J))
         {
             timer_CreateBubble += Time.deltaTime;
-            
-            if(timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
+            Debug.Log(timer_CreateBubble);
+
+        }
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            if (timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
             {
-                
+
                 // 计算玩家右边的位置
                 Vector3 rightPosition = playerTransform.position + playerTransform.right * offset;
                 // 创建新的物体
                 GameObject midBubble = Instantiate(MidBubble, rightPosition, Quaternion.identity);
-                timer_CreateBubble = 0;
+
             }
-        }
-        if(Input.GetKeyUp(KeyCode.J))
-        {
-            Debug.Log(timer_CreateBubble);
+            else if (timer_CreateBubble >= CreateBubbleTime_Big)
+            {
+                // 计算玩家右上角的位置
+                Vector3 rightPosition = playerTransform.position + playerTransform.right * offset_Big_Right+playerTransform.up*offset_Big_Up;
+                // 创建新的物体
+                GameObject midBubble = Instantiate(BigBubble, rightPosition, Quaternion.identity);
+            }
+
             timer_CreateBubble = 0;
 
         }

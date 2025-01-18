@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MiddleBubbleAI : MonoBehaviour
 {
     private Collider2D bubble;
     private Transform bubble_Transform;
+    private Rigidbody2D bigBubble_Rb;
     private float timer;
+    private Collider2D bubble_B_Collider;
 
 
     public Transform player_Transform;
@@ -18,6 +21,8 @@ public class MiddleBubbleAI : MonoBehaviour
     {
         player_Transform = GameObject.Find("Pizza").transform;
         player_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
+        
+
     }
     public void Start()
     {
@@ -41,12 +46,20 @@ public class MiddleBubbleAI : MonoBehaviour
             player_Rb.velocity = new Vector3(player_Rb.velocity.x, explode_speed, 0);
             Destroy(this.gameObject);
         }
-        
 
-
-        
     }
 
+    public bool isTouchBubble()
+    {
+        if (bubble_B_Collider.IsTouchingLayers(LayerMask.GetMask("BigBubble")))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     public bool isTouchPlayer()
     {
         if (bubble.IsTouchingLayers(LayerMask.GetMask("Player")))
@@ -63,7 +76,10 @@ public class MiddleBubbleAI : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > explode_waitTime)
         {
+            if(bubble_B_Collider.IsTouchingLayers(LayerMask.GetMask("BigBubble")))
+            {
 
+            }
             Destroy(this.gameObject);
 
         }
