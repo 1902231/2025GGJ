@@ -243,10 +243,10 @@ MonoBehaviour:
   jTimes: 1
   feet: {fileID: 5584432203055332931}
   CreateBubbleTime_Mid: 0.5
-  CreateBubbleTime_Big: 1.5
-  MidBubble: {fileID: 3846296550866690706, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+  CreateBubbleTime_Big: 1
+  MidBubble: {fileID: 3846296550866690706, guid: 5d39d46e7669ab54d9037f773362cb9d, type: 3}
   BigBubble: {fileID: 2460489885197967765, guid: 20e043a6e4cc2b246b98b7b833c1d029, type: 3}
   SmlBubble: {fileID: 0}
   offset: 2
   offset_Big_Up: 1.5
-  offset_Big_Right: 2
+  offset_Big_Right: 3

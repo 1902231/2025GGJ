@@ -10,6 +10,7 @@ public class BigBubbleAI : MonoBehaviour
     public Transform pizza_Transform;
     public Rigidbody2D pizza_Rb;
     public  float smoothSpeed;
+    public bool isFly;
 
     private Rigidbody2D rb;
     private Collider2D bigBubble_Collider;
@@ -20,6 +21,7 @@ public class BigBubbleAI : MonoBehaviour
 
     private void Awake()
     {
+        isFly = false;
         pizza_Transform = GameObject.Find("Pizza").GetComponent<Transform>();
         pizza_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
         gravityScale = pizza_Rb.gravityScale;
@@ -42,7 +44,12 @@ public class BigBubbleAI : MonoBehaviour
     }
     void Rise()
     {
+        if(isFly)
+        {
+            return;
+        }
         rb.velocity = new Vector3(rb.velocity.x, riseSpeed, 0);
+
     }
     void Eat_Pizza()
     {

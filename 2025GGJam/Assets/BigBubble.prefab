@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2460489885197967766}
   m_Layer: 8
   m_Name: BigBubble
-  m_TagString: Untagged
+  m_TagString: BigBubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -121,9 +121,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0030663947, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 0.49773425
 --- !u!114 &2460489885197967766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,3 +141,4 @@ MonoBehaviour:
   pizza_Transform: {fileID: 0}
   pizza_Rb: {fileID: 0}
   smoothSpeed: 0.02
+  isFly: 0

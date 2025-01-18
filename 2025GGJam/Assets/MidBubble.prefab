@@ -1,53 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &342883102787413332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5211664724906553630}
-  - component: {fileID: 6013829778685821303}
-  m_Layer: 0
-  m_Name: Bubble_B_Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5211664724906553630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342883102787413332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.002, y: -0.015, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3846296550866690714}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6013829778685821303
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342883102787413332}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0034263134, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.3109329
 --- !u!1 &3846296550866690706
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,8 +31,7 @@ Transform:
   m_LocalPosition: {x: -4.77, y: -2.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5211664724906553630}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,9 +100,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00095164776, y: 0}
+  m_Offset: {x: 0.00095129013, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49404037
+  m_Radius: 0.59169483
 --- !u!50 &3846296550866690717
 Rigidbody2D:
   serializedVersion: 4
@@ -185,7 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb00e952e8bd1a84a9d6d14664056815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bigBubble: {fileID: 0}
   player_Transform: {fileID: 0}
   player_Rb: {fileID: 0}
   explode_speed: 20
-  explode_waitTime: 10
+  explode_waitTime: 5
+  range: 5

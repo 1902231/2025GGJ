@@ -9,13 +9,15 @@ public class MiddleBubbleAI : MonoBehaviour
     private Transform bubble_Transform;
     private Rigidbody2D bigBubble_Rb;
     private float timer;
-    private Collider2D bubble_B_Collider;
+    
 
 
+    public Collider2D bigBubble;
     public Transform player_Transform;
     public Rigidbody2D player_Rb;
     public float explode_speed;
     public float explode_waitTime;
+    public float range;
 
     public void Awake()
     {
@@ -35,15 +37,16 @@ public class MiddleBubbleAI : MonoBehaviour
         Destroy();
         Explode();
         isTouchPlayer();
+        isTouchBubble();
     }
 
     public void Explode()
     {
         
         if (isTouchPlayer())
-        {
-
+        {            
             player_Rb.velocity = new Vector3(player_Rb.velocity.x, explode_speed, 0);
+            
             Destroy(this.gameObject);
         }
 
@@ -51,7 +54,7 @@ public class MiddleBubbleAI : MonoBehaviour
 
     public bool isTouchBubble()
     {
-        if (bubble_B_Collider.IsTouchingLayers(LayerMask.GetMask("BigBubble")))
+        if (bubble.IsTouchingLayers(LayerMask.GetMask("BigBubble")))
         {
             return true;
         }
@@ -76,12 +79,24 @@ public class MiddleBubbleAI : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > explode_waitTime)
         {
-            if(bubble_B_Collider.IsTouchingLayers(LayerMask.GetMask("BigBubble")))
+            // 检测球体范围内的碰撞体
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
+            foreach (Collider2D collider in colliders)
             {
-
+                if(collider.CompareTag("BigBubble"))
+                { 
+                    Rigidbody2D big_Rb = collider.gameObject.GetComponent<Rigidbody2D>();
+                    Vector3 dir = collider.gameObject.transform.position - transform.position;
+                    collider.gameObject.GetComponent<BigBubbleAI>().isFly = true;
+                    big_Rb.velocity = dir.normalized * explode_speed;
+                }
+                
+                
             }
             Destroy(this.gameObject);
-
         }
     }
+
+
+    
 }
