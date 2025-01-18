@@ -27,6 +27,7 @@ public class PausePanel : BasePanel
         btn_Close.onClick.AddListener(() =>
         {
             UIManager.Instance.HidePanel<PausePanel>();
+            UIManager.Instance.ShowPanel<GamePanel>();
         });
     }
 }

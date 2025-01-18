@@ -159,6 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5529849330140508751}
   - component: {fileID: 5529849330140508744}
+  - component: {fileID: -5766154986423604543}
   m_Layer: 5
   m_Name: xlSlider
   m_TagString: Untagged
@@ -240,6 +241,22 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-5766154986423604543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529849330140508750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769449e9509276649aedafc28249caee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  slvale: 1
+  character: {fileID: 0}
+  offset: {x: -1, y: 0, z: 0}
 --- !u!1 &5529849330607919766
 GameObject:
   m_ObjectHideFlags: 0

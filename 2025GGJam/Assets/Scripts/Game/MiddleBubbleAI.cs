@@ -21,8 +21,6 @@ public class MiddleBubbleAI : MonoBehaviour
     {
         player_Transform = GameObject.Find("Pizza").transform;
         player_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
-        
-
     }
     public void Start()
     {

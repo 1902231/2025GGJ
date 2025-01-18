@@ -29,6 +29,4 @@ public class BeginPanel : BasePanel
             Application.Quit();
         });
     }
-
-  
 }

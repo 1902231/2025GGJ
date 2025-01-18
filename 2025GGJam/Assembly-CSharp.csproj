@@ -41,16 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\l2910\Documents\GitHub\2025GGJ\2025GGJam\Assets\DOTween\Editor\DOTweenEditor.dll" />
-    <Analyzer Include="C:\Users\l2910\Documents\GitHub\2025GGJ\2025GGJam\Assets\DOTween\DOTween.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Scripts\Json\LitJson\JsonWriter.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\Data\GameDataMgr.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\JsonMockWrapper.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\JsonData.cs" />
     <Compile Include="Assets\Scripts\UI\SettingPanel.cs" />
+    <Compile Include="Assets\Scripts\Dotween\Bubble.cs" />
     <Compile Include="Assets\Scripts\BKMusic.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Scripts\UI\ChangLevelPanel.cs" />
     <Compile Include="Assets\Scripts\UI\GamePanel.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\JsonMapper.cs" />
@@ -62,26 +62,27 @@
     <Compile Include="Assets\Scripts\Game\cbj.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\Netstandard15Polyfill.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\IJsonWrapper.cs" />
+    <Compile Include="Assets\Scripts\Game\xlSlider.cs" />
     <Compile Include="Assets\Scripts\Game\BisicBubble.cs" />
+    <Compile Include="Assets\Scripts\Game\JC.cs" />
     <Compile Include="Assets\Scripts\Game\MiddleBubbleAI.cs" />
     <Compile Include="Assets\Scripts\Game\BisicController.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\JsonReader.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\Lexer.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Scripts\UI\BeginPanel.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+    <Compile Include="Assets\Scripts\SmoothCameraFollow.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\UI\BasePanel.cs" />
     <Compile Include="Assets\Scripts\Json\LitJson\ParserToken.cs" />
     <Compile Include="Assets\Scripts\Data\MusicData.cs" />
-    <Compile Include="Assets\Scripts\Game\xlSlider.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\Scripts\Dotween\Bubble.cs" />
+    <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Scripts\Game\desCub.cs" />
+    <Compile Include="Assets\Scripts\Game\Button1.cs" />
+    <Compile Include="Assets\Scripts\Game\door.cs" />
     <None Include="Assets\DOTween\readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files (x86)\Unity\2021.3.44f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
