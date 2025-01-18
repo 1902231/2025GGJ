@@ -63,6 +63,10 @@
     <Compile Include="Assets\Scripts\UI\ChangLevelPanel.cs" />
     <Compile Include="Assets\Scripts\UI\PausePanel.cs" />
     <Compile Include="Assets\Scripts\UI\GamePanel.cs" />
+    <Compile Include="Assets\Scripts\Game\BisicController.cs" />
+    <Compile Include="Assets\Scripts\Game\BisicBubble.cs" />
+    <Compile Include="Assets\Scripts\Game\MiddleBubbleAI.cs" />
+    <Compile Include="Assets\Scripts\Game\cbj.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files (x86)\Unity\2021.3.44f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
