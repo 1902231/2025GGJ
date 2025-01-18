@@ -41,32 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonWriter.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonMockWrapper.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonData.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonMapper.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonException.cs" />
-    <Compile Include="Assets\Scripts\Json\JsonMgr.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\Netstandard15Polyfill.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\IJsonWrapper.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\JsonReader.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\Lexer.cs" />
-    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
-    <Compile Include="Assets\Scripts\UI\BasePanel.cs" />
-    <Compile Include="Assets\Scripts\Json\LitJson\ParserToken.cs" />
-    <Compile Include="Assets\Scripts\UI\BeginPanel.cs" />
-    <Compile Include="Assets\Scripts\Main.cs" />
-    <Compile Include="Assets\Scripts\UI\SettingPanel.cs" />
-    <Compile Include="Assets\Scripts\Data\MusicData.cs" />
-    <Compile Include="Assets\Scripts\Data\GameDataMgr.cs" />
-    <Compile Include="Assets\Scripts\BKMusic.cs" />
-    <Compile Include="Assets\Scripts\UI\ChangLevelPanel.cs" />
-    <Compile Include="Assets\Scripts\UI\PausePanel.cs" />
-    <Compile Include="Assets\Scripts\UI\GamePanel.cs" />
-    <Compile Include="Assets\Scripts\Game\BisicController.cs" />
-    <Compile Include="Assets\Scripts\Game\BisicBubble.cs" />
-    <Compile Include="Assets\Scripts\Game\MiddleBubbleAI.cs" />
-    <Compile Include="Assets\Scripts\Game\cbj.cs" />
+    <Compile Include="Assets\Scripts\BisicController.cs" />
+    <Compile Include="Assets\Scripts\BisicBubble.cs" />
+    <Compile Include="Assets\Scripts\MiddleBubbleAI.cs" />
+    <Compile Include="Assets\Scripts\BigBubbleAI.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Program Files (x86)\Unity\2021.3.44f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
