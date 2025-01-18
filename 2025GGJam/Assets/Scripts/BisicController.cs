@@ -9,19 +9,29 @@ public class BisicController : MonoBehaviour
     public float jumpTime;//最好不要大于1，否则可能会长按跳跃向上的速度衰减过头变成向下的速度
     public int jTimes;
     public BoxCollider2D feet;
+    public float CreateBubbleTime_Mid;
+    public float CreateBubbleTime_Big;
+    public GameObject MidBubble;
+    public GameObject BigBubble;
+    public GameObject SmlBubble;
+    public float offset;
 
 
     private Rigidbody2D rb;
     private float timer;
     private int jTimes_p;
     private bool isJumping;
+    private float timer_CreateBubble;
+    private Transform playerTransform;
 
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerTransform = this.transform;
         timer = 0;
+        timer_CreateBubble = 0;
         jTimes_p = jTimes;
     }
 
@@ -31,6 +41,7 @@ public class BisicController : MonoBehaviour
         Move();
         Jump();
         OnGround();
+        CreateBubble();
     }
 
 
@@ -49,10 +60,10 @@ public class BisicController : MonoBehaviour
         if (Input.GetKey(KeyCode.K))
         {
             timer += Time.deltaTime;
-            Debug.Log(timer);
+
             if (timer > jumpTime)
             {
-                Debug.Log(111);
+
                 timer = jumpTime;
                 return;
             }
@@ -73,6 +84,23 @@ public class BisicController : MonoBehaviour
         {
             timer = 0;
             jTimes_p = jTimes;
+        }
+    }
+    void CreateBubble()
+    {
+        if(Input.GetKey(KeyCode.J))
+        {
+            timer_CreateBubble += Time.deltaTime;
+            Debug.Log(timer_CreateBubble);
+            if(timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
+            {
+                
+                // 计算玩家右边的位置
+                Vector3 rightPosition = playerTransform.position + playerTransform.right * offset;
+                // 创建新的物体
+                GameObject midBubble = Instantiate(MidBubble, rightPosition, Quaternion.identity);
+                timer_CreateBubble = 0;
+            }
         }
     }
 }

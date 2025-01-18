@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 330290182}
   - component: {fileID: 330290184}
   - component: {fileID: 330290185}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pizza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330290181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0017626, y: -0.0070505, z: 0}
+  m_LocalPosition: {x: -1.5, y: -1.52, z: 0}
   m_LocalScale: {x: 0.13420115, y: 0.13420115, z: 0.13420115}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -248,6 +248,29 @@ MonoBehaviour:
   jumpTime: 0.6
   jTimes: 1
   feet: {fileID: 701911404}
+  CreateBubbleTime_Mid: 0
+  CreateBubbleTime_Big: 0
+--- !u!1 &496851731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3920428744353935201, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+  m_PrefabInstance: {fileID: 3920428744311780466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &496851736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496851731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb00e952e8bd1a84a9d6d14664056815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_Transform: {fileID: 330290183}
+  player_Rb: {fileID: 330290184}
+  explode_speed: 50
+  explode_waitTime: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701911403}
   - component: {fileID: 701911404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -461,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267257619}
   - component: {fileID: 1267257620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,11 +610,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3920428744353935205, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3250356
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 3920428744353935205, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.61
+      value: -3.07
       objectReference: {fileID: 0}
     - target: {fileID: 3920428744353935205, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -624,6 +647,22 @@ PrefabInstance:
     - target: {fileID: 3920428744353935205, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920428744353935206, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920428744353935207, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+      propertyPath: m_Radius
+      value: 0.49404037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920428744353935207, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00095164776
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920428744353935207, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45115632bb01ee0469550a761f7775dc, type: 3}
