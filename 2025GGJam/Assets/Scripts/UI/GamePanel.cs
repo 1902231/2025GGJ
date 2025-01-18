@@ -12,8 +12,9 @@ public class GamePanel : BasePanel
     public Button btn_Pause;
     public Button btn_Reloading;
     
-    public void Update()
+    protected override void Update()
     {
+        base.Update();
         sceneName = SceneManager.GetActiveScene().name;
     }
 
