@@ -38,13 +38,28 @@ public class BisicController : MonoBehaviour
 
     void Update()
     {
+        flip();
         Move();
         Jump();
         OnGround();
         CreateBubble();
     }
 
-
+    void flip()
+    {
+        bool hasXSpeed = Mathf.Abs(rb.velocity.x) > Mathf.Epsilon;
+        if(hasXSpeed)
+        {
+            if(rb.velocity.x > 0.1f)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            if(rb.velocity.x < -0.1f)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+        }
+    }
     void Move()
     {
         rb.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, 0);
@@ -91,7 +106,7 @@ public class BisicController : MonoBehaviour
         if(Input.GetKey(KeyCode.J))
         {
             timer_CreateBubble += Time.deltaTime;
-            Debug.Log(timer_CreateBubble);
+            
             if(timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
             {
                 
@@ -101,6 +116,12 @@ public class BisicController : MonoBehaviour
                 GameObject midBubble = Instantiate(MidBubble, rightPosition, Quaternion.identity);
                 timer_CreateBubble = 0;
             }
+        }
+        if(Input.GetKeyUp(KeyCode.J))
+        {
+            Debug.Log(timer_CreateBubble);
+            timer_CreateBubble = 0;
+
         }
     }
 }

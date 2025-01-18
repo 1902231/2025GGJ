@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb00e952e8bd1a84a9d6d14664056815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_Transform: {fileID: 5584432203957599016, guid: 8b4f9c7963f5186499789b5be111a244, type: 3}
-  player_Rb: {fileID: 5584432203957599015, guid: 8b4f9c7963f5186499789b5be111a244, type: 3}
-  explode_speed: 50
+  player_Transform: {fileID: 0}
+  player_Rb: {fileID: 0}
+  explode_speed: 20
   explode_waitTime: 10

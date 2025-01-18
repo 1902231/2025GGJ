@@ -14,6 +14,11 @@ public class MiddleBubbleAI : MonoBehaviour
     public float explode_speed;
     public float explode_waitTime;
 
+    public void Awake()
+    {
+        player_Transform = GameObject.Find("Pizza").transform;
+        player_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
+    }
     public void Start()
     {
         bubble = GetComponent<Collider2D>();
@@ -32,8 +37,8 @@ public class MiddleBubbleAI : MonoBehaviour
         
         if (isTouchPlayer())
         {
-            Vector3 dir = (player_Transform.position - bubble_Transform.position).normalized;
-            player_Rb.AddForce(dir * explode_speed, ForceMode2D.Impulse);
+
+            player_Rb.velocity = new Vector3(player_Rb.velocity.x, explode_speed, 0);
             Destroy(this.gameObject);
         }
         
@@ -58,6 +63,7 @@ public class MiddleBubbleAI : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > explode_waitTime)
         {
+
             Destroy(this.gameObject);
 
         }

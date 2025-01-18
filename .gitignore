@@ -1,5 +1,11 @@
 Library
+<<<<<<< HEAD
 obj
 Temp
 Logs
 .idea
+=======
+.idea
+Logs
+Temp
+>>>>>>> 88f80508b7aab14771b8d079d20ecbeee73c5ce4
