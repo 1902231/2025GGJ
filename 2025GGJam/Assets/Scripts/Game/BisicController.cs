@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SwordFrames;
+using Unity.VisualScripting;
 
 public class BisicController : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpSpeed;
-    public float jumpTime;//最好不要大于1，否则可能会长按跳跃向上的速度衰减过头变成向下的速度
+    public float jumpTime;
     public int jTimes;
     public BoxCollider2D feet;
     public float CreateBubbleTime_Mid;
@@ -25,9 +27,7 @@ public class BisicController : MonoBehaviour
     private bool isJumping;
     private float timer_CreateBubble;
     private Transform playerTransform;
-
-
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,8 +36,7 @@ public class BisicController : MonoBehaviour
         timer_CreateBubble = 0;
         jTimes_p = jTimes;
     }
-
-
+    
     void Update()
     {
         flip();
@@ -62,6 +61,7 @@ public class BisicController : MonoBehaviour
             }
         }
     }
+    
     void Move()
     {
         rb.velocity = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y, 0);
@@ -70,10 +70,6 @@ public class BisicController : MonoBehaviour
     {
         if (jTimes_p <= 0)
             return;
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-
-        }
         if (Input.GetKey(KeyCode.K))
         {
             timer += Time.deltaTime;
@@ -89,14 +85,12 @@ public class BisicController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.K))
         {
             jTimes_p--;
-
         }
     }
 
 
     void OnGround()
     {
-        // 检查是否与 Ground 物体发生碰撞
         if (feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             timer = 0;
@@ -115,23 +109,17 @@ public class BisicController : MonoBehaviour
         {
             if (timer_CreateBubble >= CreateBubbleTime_Mid && timer_CreateBubble < CreateBubbleTime_Big)
             {
-
-                // 计算玩家右边的位置
                 Vector3 rightPosition = playerTransform.position + playerTransform.right * offset;
-                // 创建新的物体
                 GameObject midBubble = Instantiate(MidBubble, rightPosition, Quaternion.identity);
-
+                AudioSourceManager.Instance.PlaySound("娉℃场浜х敓");
             }
             else if (timer_CreateBubble >= CreateBubbleTime_Big)
             {
-                // 计算玩家右上角的位置
                 Vector3 rightPosition = playerTransform.position + playerTransform.right * offset_Big_Right+playerTransform.up*offset_Big_Up;
-                // 创建新的物体
                 GameObject midBubble = Instantiate(BigBubble, rightPosition, Quaternion.identity);
+                AudioSourceManager.Instance.PlaySound("娉℃场浜х敓");
             }
-
             timer_CreateBubble = 0;
-
         }
     }
 }

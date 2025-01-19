@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+using SwordFrames;
+using Unity.VisualScripting;
 
 public class BigBubbleAI : MonoBehaviour
 {
@@ -23,6 +25,7 @@ public class BigBubbleAI : MonoBehaviour
         pizza_Transform = GameObject.Find("Pizza").GetComponent<Transform>();
         pizza_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
         gravityScale = pizza_Rb.gravityScale;
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -69,7 +72,9 @@ public class BigBubbleAI : MonoBehaviour
         if(timer_Explode >= ExplodeTime || bigBubble_Collider.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             pizza_Rb.gravityScale = gravityScale;
+            AudioSourceManager.Instance.PlaySound("泡泡爆炸");
             Destroy(this.gameObject);
         }
+        
     }
 }

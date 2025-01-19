@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using SwordFrames;
+using Unity.VisualScripting;
 
 public class GamePanel : BasePanel
 {
@@ -20,6 +22,7 @@ public class GamePanel : BasePanel
 
     protected override void Init()
     {
+        AudioSourceManager.Instance.PlaySound("ui2");
         btn_Pause.onClick.AddListener(() =>
         {
             UIManager.Instance.ShowPanel<PausePanel>();
@@ -27,6 +30,7 @@ public class GamePanel : BasePanel
         
         btn_Reloading.onClick.AddListener(() =>
         {
+            AudioSourceManager.Instance.PlaySound("ui3");
             SceneManager.LoadScene(sceneName);
             UIManager.Instance.ShowPanel<GamePanel>();
         });

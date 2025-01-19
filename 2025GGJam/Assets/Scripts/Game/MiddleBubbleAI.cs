@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using SwordFrames;
+using Unity.VisualScripting;
 
 public class MiddleBubbleAI : MonoBehaviour
 {
@@ -10,8 +12,6 @@ public class MiddleBubbleAI : MonoBehaviour
     private Rigidbody2D bigBubble_Rb;
     private float timer;
     
-
-
     public Collider2D bigBubble;
     public Transform player_Transform;
     public Rigidbody2D player_Rb;
@@ -19,18 +19,18 @@ public class MiddleBubbleAI : MonoBehaviour
     public float explode_waitTime;
     public float range;
 
+    private AudioSource deathSound;
+    
     public void Awake()
     {
         player_Transform = GameObject.Find("Pizza").transform;
         player_Rb = GameObject.Find("Pizza").GetComponent<Rigidbody2D>();
-        
-
     }
     public void Start()
     {
         bubble = GetComponent<Collider2D>();
         bubble_Transform = GetComponent<Transform>();
-
+        deathSound = GetComponent<AudioSource>();
     }
     public void Update()
     {
@@ -90,6 +90,7 @@ public class MiddleBubbleAI : MonoBehaviour
                     big_Rb.velocity = dir.normalized * explode_speed;
                 }
             }
+            AudioSourceManager.Instance.PlaySound("泡泡爆炸");
             Destroy(this.gameObject);
         }
     }

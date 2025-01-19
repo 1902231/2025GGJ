@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9210104810973837737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8115443, y: -2.55, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.8202, y: -2.5298, z: 0}
+  m_LocalScale: {x: 1.0029, y: 1.0405, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.9433962, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3282a87b01fe3654fbd41c40ee1fe294, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,8 +102,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,9 +111,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 0.5773587}
-      - {x: -0.5, y: -0.28866667}
-      - {x: 0.5, y: -0.28866667}
+    - - {x: 2.640749, y: 0.4212842}
+      - {x: 2.3803878, y: -0.30434775}
+      - {x: 2.0926056, y: 0.43640137}
+      - {x: 1.8840365, y: -0.27193856}
+      - {x: 1.6080294, y: 0.43942332}
+      - {x: 1.4137645, y: -0.21023273}
+      - {x: 1.173019, y: 0.45309854}
+      - {x: 0.9286171, y: -0.27012324}
+      - {x: 0.65224576, y: 0.41166067}
+      - {x: 0.4177782, y: -0.23902059}
+      - {x: 0.16392636, y: 0.4393108}
+      - {x: -0.052075803, y: -0.18850684}
+      - {x: -0.23558164, y: 0.45812583}
+      - {x: -0.4868455, y: -0.2805903}
+      - {x: -0.76202023, y: 0.46801496}
+      - {x: -0.9997636, y: -0.2042613}
+      - {x: -1.253765, y: 0.4192562}
+      - {x: -1.431518, y: -0.13410664}
+      - {x: -1.4372975, y: -0.1572249}
+      - {x: -1.4488567, y: -0.15144515}
+      - {x: -1.6618241, y: 0.44525814}
+      - {x: -1.9283532, y: -0.27382135}
+      - {x: -2.1863346, y: 0.45985055}
+      - {x: -2.415289, y: -0.28639627}
+      - {x: -2.7106128, y: 0.43864918}
+      - {x: -2.9736505, y: -0.46783322}
+      - {x: 2.996769, y: -0.4736125}
 --- !u!114 &9210104810973837749
 MonoBehaviour:
   m_ObjectHideFlags: 0

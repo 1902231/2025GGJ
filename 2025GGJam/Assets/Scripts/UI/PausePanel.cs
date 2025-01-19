@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using SwordFrames;
+using Unity.VisualScripting;
 
 public class PausePanel : BasePanel
 {
@@ -14,18 +16,21 @@ public class PausePanel : BasePanel
     {
         btn_Setting.onClick.AddListener(() =>
         {
+            AudioSourceManager.Instance.PlaySound("ui1");
             UIManager.Instance.HidePanel<PausePanel>();
             UIManager.Instance.ShowPanel<SettingPanel>();
         });
         
         btn_Back.onClick.AddListener(() =>
         {
+            AudioSourceManager.Instance.PlaySound("ui1");
             UIManager.Instance.HidePanel<PausePanel>();
             SceneManager.LoadScene("BeginScene");
         });
         
         btn_Close.onClick.AddListener(() =>
         {
+            AudioSourceManager.Instance.PlaySound("ui1");
             UIManager.Instance.HidePanel<PausePanel>();
             UIManager.Instance.ShowPanel<GamePanel>();
         });
