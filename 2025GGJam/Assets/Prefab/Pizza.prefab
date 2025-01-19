@@ -361,7 +361,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048766136, y: 0.21247005}
+  m_Offset: {x: -0.2672956, y: -0.6889572}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -372,7 +372,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.833115, y: 10.079985}
+  m_Size: {x: 10.035013, y: 11.882839}
   m_EdgeRadius: 0
 --- !u!1 &6022329590456428456
 GameObject:
@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 8689027730436834951}
   - component: {fileID: 2872129604311128300}
   - component: {fileID: 6228713165850505221}
+  - component: {fileID: 7384179311096018517}
   m_Layer: 7
   m_Name: Pizza
   m_TagString: Player
@@ -456,15 +457,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 6ce52b463ca460c4dbdea877e60cfe13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 723784cd59d5c1040a364e59b015f507, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.11, y: 2.06}
+  m_Size: {x: 13.333333, y: 24.733334}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &6022329590456428453
@@ -479,7 +480,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1.6035638
+  m_Mass: 2.1475868
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 4
@@ -542,18 +543,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.890738, y: -0.7758026}
+  m_Offset: {x: -1.1092644, y: -1.3767543}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.11, y: 2.06}
-    newSize: {x: 1.11, y: 2.06}
+    oldSize: {x: 13.333333, y: 24.733334}
+    newSize: {x: 13.333333, y: 24.733334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.312678, y: 18.162552}
+  m_Size: {x: 10.623848, y: 21.112679}
   m_EdgeRadius: 0
 --- !u!96 &2872129604311128300
 TrailRenderer:
@@ -693,6 +694,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c101a7c35c84a4aac2b340df9e711c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7384179311096018517
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6022329590456428456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b47057ef9986724e858266caa700cd3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6022329590817694407
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +760,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.808359}
+  m_Offset: {x: -0.13658404, y: -6.747796}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -749,7 +771,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.174208, y: 0.5191612}
+  m_Size: {x: 9.775164, y: 0.79232216}
   m_EdgeRadius: 0
 --- !u!1 &8661983740039271694
 GameObject:
