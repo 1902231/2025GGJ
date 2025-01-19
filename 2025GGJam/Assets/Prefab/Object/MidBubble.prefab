@@ -137,10 +137,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb00e952e8bd1a84a9d6d14664056815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bigBubble: {fileID: 0}
   player_Transform: {fileID: 0}
   player_Rb: {fileID: 3846296550866690717}
-  explode_speed: 50
-  explode_waitTime: 999
+  explode_speed: 20
+  explode_waitTime: 5
+  range: 5
 --- !u!114 &1759512761
 MonoBehaviour:
   m_ObjectHideFlags: 0

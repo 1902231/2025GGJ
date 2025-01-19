@@ -142,3 +142,4 @@ MonoBehaviour:
   explode_speed: 20
   explode_waitTime: 5
   range: 5
+  bisControl_time: 0

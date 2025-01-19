@@ -9,6 +9,8 @@ public class MiddleBubbleAI : MonoBehaviour
     private Transform bubble_Transform;
     private Rigidbody2D bigBubble_Rb;
     private float timer;
+    private float timer_bisControl;
+
     
 
 
@@ -18,6 +20,7 @@ public class MiddleBubbleAI : MonoBehaviour
     public float explode_speed;
     public float explode_waitTime;
     public float range;
+    public float bisControl_time;
 
     public void Awake()
     {
@@ -44,14 +47,12 @@ public class MiddleBubbleAI : MonoBehaviour
     {
         
         if (isTouchPlayer())
-        {            
+        {
             player_Rb.velocity = new Vector3(player_Rb.velocity.x, explode_speed, 0);
-            
             Destroy(this.gameObject);
         }
-
     }
-
+    
     public bool isTouchBubble()
     {
         if (bubble.IsTouchingLayers(LayerMask.GetMask("BigBubble")))

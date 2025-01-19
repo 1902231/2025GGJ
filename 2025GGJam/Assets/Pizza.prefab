@@ -129,9 +129,10 @@ GameObject:
   - component: {fileID: 5584432203957599015}
   - component: {fileID: 5584432203957599014}
   - component: {fileID: 1025031061}
+  - component: {fileID: 7875963798469777508}
   m_Layer: 7
   m_Name: Pizza
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,7 +195,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 9e3342a5797408243a2e3cdb6e77419e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -245,11 +246,13 @@ MonoBehaviour:
   jTimes: 1
   feet: {fileID: 5584432203055332931}
   CreateBubbleTime_Mid: 1
-  CreateBubbleTime_Big: 5
+  CreateBubbleTime_Big: 1.5
   MidBubble: {fileID: 3846296550866690706, guid: bb7b50cf32483fa438434f655b1fe310, type: 3}
-  BigBubble: {fileID: 0}
+  BigBubble: {fileID: 2460489885197967765, guid: 20e043a6e4cc2b246b98b7b833c1d029, type: 3}
   SmlBubble: {fileID: 0}
   offset: 2
+  offset_Big_Up: 1.5
+  offset_Big_Right: 3
 --- !u!114 &1025031061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +269,32 @@ MonoBehaviour:
   slvale: 1
   character: {fileID: 5584432203957599016}
   offset: {x: -1, y: 0, z: 0}
+--- !u!61 &7875963798469777508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5584432203957599018}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.6, y: 9.6}
+    newSize: {x: 9.6, y: 9.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.6, y: 9.6}
+  m_EdgeRadius: 0
 --- !u!1001 &126693610377028131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275,11 +304,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5529849328676908321, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.9999847
+      value: -4.9999237
       objectReference: {fileID: 0}
     - target: {fileID: 5529849329708192250, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.9999847
+      value: -4.9999237
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508744, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_Value
@@ -319,11 +348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 123.1
+      value: 122.6
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 511.85
+      value: 495.8
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -355,11 +384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -439
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -36.575
+      value: -462
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -381,7 +410,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5766154986423604543, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
 --- !u!114 &5584432201885372523 stripped
 MonoBehaviour:

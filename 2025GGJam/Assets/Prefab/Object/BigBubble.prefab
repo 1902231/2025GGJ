@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseSpeed: 1
-  ExplodeTime: 10
+  ExplodeTime: 6
   pizza_Transform: {fileID: 0}
   pizza_Rb: {fileID: 0}
   smoothSpeed: 0.02
