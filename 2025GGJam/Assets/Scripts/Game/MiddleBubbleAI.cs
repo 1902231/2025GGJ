@@ -79,7 +79,6 @@ public class MiddleBubbleAI : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > explode_waitTime)
         {
-            // 检测球体范围内的碰撞体
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);
             foreach (Collider2D collider in colliders)
             {
@@ -90,13 +89,8 @@ public class MiddleBubbleAI : MonoBehaviour
                     collider.gameObject.GetComponent<BigBubbleAI>().isFly = true;
                     big_Rb.velocity = dir.normalized * explode_speed;
                 }
-                
-                
             }
             Destroy(this.gameObject);
         }
     }
-
-
-    
 }

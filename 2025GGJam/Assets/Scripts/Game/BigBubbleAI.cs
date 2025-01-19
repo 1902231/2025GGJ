@@ -15,10 +15,8 @@ public class BigBubbleAI : MonoBehaviour
     private Rigidbody2D rb;
     private Collider2D bigBubble_Collider;
     private float timer_Explode;
-    private float gravityScale;
-
+    public float gravityScale;
     
-
     private void Awake()
     {
         isFly = false;
@@ -39,9 +37,10 @@ public class BigBubbleAI : MonoBehaviour
     void Update()
     {
         Rise();
-        Destroy();
+        BigBubbleDestroy();
         Eat_Pizza();
     }
+    
     void Rise()
     {
         if(isFly)
@@ -62,10 +61,9 @@ public class BigBubbleAI : MonoBehaviour
                     pizza_Transform.position = Vector3.Lerp(pizza_Transform.position, targetPos, smoothSpeed);
                     pizza_Rb.gravityScale = 0;
                 }
-            
         }
     }
-    void Destroy()
+    public void BigBubbleDestroy()
     {
         timer_Explode += Time.deltaTime;
         if(timer_Explode >= ExplodeTime || bigBubble_Collider.IsTouchingLayers(LayerMask.GetMask("Ground")))

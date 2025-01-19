@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc87a408a605524298c66637154c7df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseSpeed: 1
-  ExplodeTime: 10
+  riseSpeed: 2
+  ExplodeTime: 16
   pizza_Transform: {fileID: 0}
   pizza_Rb: {fileID: 0}
   smoothSpeed: 0.02
