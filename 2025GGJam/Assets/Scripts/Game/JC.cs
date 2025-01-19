@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JC : MonoBehaviour
 {
@@ -6,8 +7,11 @@ public class JC : MonoBehaviour
     {
         if (other.CompareTag("Bubble"))
         {
-            Debug.Log(other.name);
             Destroy(other.gameObject);
+        }
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
