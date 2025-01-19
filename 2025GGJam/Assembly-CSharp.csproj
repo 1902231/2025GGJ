@@ -96,6 +96,10 @@
     <Compile Include="Assets\Scripts\SwordFrames&amp;Utilities\ResourceLoadSystem\ResourceLoad.cs" />
     <Compile Include="Assets\Scripts\SwordFrames&amp;Utilities\Single\SingletonMonoBaseAuto.cs" />
     <Compile Include="Assets\Scripts\SwordFrames&amp;Utilities\AudioSourceManager\AudioSourceManager.cs" />
+    <Compile Include="Assets\Scripts\Game\PizzaAnim.cs" />
+    <Compile Include="Assets\Scripts\Game\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Game\PlayerTrail.cs" />
+    <Compile Include="Assets\Scripts\Dotween\ButtonDoTween.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
