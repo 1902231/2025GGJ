@@ -129,10 +129,9 @@ GameObject:
   - component: {fileID: 5584432203957599015}
   - component: {fileID: 5584432203957599014}
   - component: {fileID: 1025031061}
-  - component: {fileID: 7875963798469777508}
   m_Layer: 7
   m_Name: Pizza
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -269,32 +268,6 @@ MonoBehaviour:
   slvale: 1
   character: {fileID: 5584432203957599016}
   offset: {x: -1, y: 0, z: 0}
---- !u!61 &7875963798469777508
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5584432203957599018}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.6, y: 9.6}
-    newSize: {x: 9.6, y: 9.6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9.6, y: 9.6}
-  m_EdgeRadius: 0
 --- !u!1001 &126693610377028131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -304,11 +277,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5529849328676908321, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.9999237
+      value: -4.9999847
       objectReference: {fileID: 0}
     - target: {fileID: 5529849329708192250, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.9999237
+      value: -4.9999847
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508744, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_Value
@@ -320,11 +293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0.5000002
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0.49999994
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_RootOrder
@@ -348,11 +321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 122.6
+      value: 123.1
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 495.8
+      value: 511.85
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -384,11 +357,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -350
+      value: -405.95
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -462
+      value: -489
       objectReference: {fileID: 0}
     - target: {fileID: 5529849330140508751, guid: 0977b9cda95821d45afdd72c459db9fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

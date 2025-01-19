@@ -22,7 +22,7 @@ public class cbj : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Bubble"))
+        if (other.CompareTag("Bubble")|| other.CompareTag("BigBubble"))
         {
             targetRigidbody = other.GetComponent<Rigidbody2D>();
             if (targetRigidbody!= null)
@@ -36,7 +36,7 @@ public class cbj : MonoBehaviour
     {
         if (cfjOpen)
         {
-            if (other.CompareTag("Bubble"))
+            if (other.CompareTag("Bubble") || other.CompareTag("BigBubble"))
             {
                 Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
                 if (rb!= null)
@@ -63,12 +63,19 @@ public class cbj : MonoBehaviour
     {
         // 定义一个阻尼系数，用于控制速度减小的速度，可以根据需要调整
         float damping = 0.95f; 
-        while (rb.velocity.magnitude > 0.1f)
+        while (rb!= null && rb.velocity.magnitude > 0.1f)
         {
+            if (rb == null)
+            {
+                yield break;
+            }
             // 使用阻尼的方式逐渐减小速度
             rb.velocity *= damping; 
             yield return new WaitForFixedUpdate();
         }
-        rb.velocity = Vector2.zero;
+        if (rb!= null)
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 }
