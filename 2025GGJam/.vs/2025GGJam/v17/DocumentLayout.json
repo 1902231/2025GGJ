@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\assets\\scripts\\game\\bisiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|d:\\backup\\documents\\github\\2025ggj\\2025ggjam\\assets\\scripts\\game\\pizzaanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\pizzaanim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|d:\\backup\\documents\\github\\2025ggj\\2025ggjam\\assets\\scripts\\game\\bisiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\bisiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|d:\\backup\\documents\\github\\2025ggj\\2025ggjam\\assets\\scripts\\game\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\assets\\scripts\\game\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BBE4E34-D3B5-5363-9EE0-6F9E56BFDB14}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +82,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "PizzaAnim.cs",
+              "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\PizzaAnim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\PizzaAnim.cs",
+              "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\PizzaAnim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\PizzaAnim.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T06:10:09.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PlayerTrail.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\PlayerTrail.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\PlayerTrail.cs",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ButtonDoTween.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Dotween\\ButtonDoTween.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dotween\\ButtonDoTween.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BasePanel.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\UI\\BasePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\BasePanel.cs",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameOver.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\GameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameOver.cs",
@@ -122,12 +139,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameOver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-18T21:43:20.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-18T21:43:20.706Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BigBubbleAI.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\BigBubbleAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\BigBubbleAI.cs",
@@ -139,20 +155,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BisicController.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\BisicController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\BisicController.cs",
               "ToolTip": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\BisicController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Game\\BisicController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA4wIkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAUwIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T18:18:31.421Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MiddleBubbleAI.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\Game\\MiddleBubbleAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\MiddleBubbleAI.cs",
@@ -164,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GamePanel.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\UI\\GamePanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GamePanel.cs",
@@ -176,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BigBubbleAI.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BigBubbleAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BigBubbleAI.cs",
@@ -187,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BisicController.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BisicController.cs",
@@ -199,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "MiddleBubbleAI.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubbleAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MiddleBubbleAI.cs",
@@ -211,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MiddleBubble.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\MiddleBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MiddleBubble.cs",
@@ -222,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "BisicBubble.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\Scripts\\BisicBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BisicBubble.cs",
@@ -234,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BisicController.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\BisicController.cs",
               "RelativeDocumentMoniker": "Assets\\BisicController.cs",
@@ -245,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "D:\\Backup\\Documents\\GitHub\\2025GGJ\\2025GGJam\\Assets\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\NewBehaviourScript.cs",
